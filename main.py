@@ -2,6 +2,8 @@ import pickle
 import streamlit as st
 import pandas as pd
 
+st.set_page_config(page_title="Car Price Predictions App")
+
 # Load the cars list and model
 cars = pickle.load(open('cars_list.pkl', 'rb'))
 car_data = pd.DataFrame(cars)
